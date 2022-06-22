@@ -1,0 +1,164 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container, .header-titles {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* --- Top Dojo Weather Bar ---- */
+.header {
+    background-color: skyblue;
+    color: white;
+}
+
+.header-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.header-titles h1 {
+    font-size: 2.5em;
+}
+
+.header-titles ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header-titles a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* --- San Jose/Temp select --- */
+.name-temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-bottom: 40px;
+    border-bottom: solid 2px black;
+}
+
+.name-temp h1 {
+    font-size: 2em;
+}
+
+.name-temp select, .name-temp label {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.name-temp select {
+    width: 60px;
+}
+/* --- Weather Boxes --- */
+
+.main {
+    display: flex;
+}
+
+.weather-block {
+    flex: 1;
+    background-color: lightgray;
+    padding: 40px 0;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.weather-block:last-child {
+    margin-right: 0;
+}
+
+.weather-block img {
+    border-radius: 50%;
+    width: 150px;
+    margin: 40px 0;
+}
+
+.weather-block p {
+    font-size: 1.2em;
+}
+
+.temp-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weather-block p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.temp-high, .low-temp {
+    font-size: 1.5em;
+}
+
+.temp-high::after, .low-temp::after {
+    content: "°";
+}
+.temp-high {
+    color: red;
+}
+
+.low-temp{
+    color: blue;
+}
+
+/* --- Cookie Box on bottom --- */
+.cookie-box  {  
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.box-body {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 160px;
+    padding: 20px;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+.box-text {
+    width: 70%;
+}
+
+.box-text h1 {
+    font-size: 1.8em;
+}
+
+.box-text p {
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: solid 2px black;
+    box-shadow: 4px 4px black;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+/* Need to figure out how to get it to convert when I select 'F' */
+/* Also need to figure out how to get the box to close when I click "I Accept" */
+
